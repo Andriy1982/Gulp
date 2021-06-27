@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: rgb(75, 68, 139);
+    // background-color: rgb(75, 68, 139);
 }
 
-@import "second"
+@import "base";
+@import "header";
+@import "video";
+@import "project";
+@import "about";

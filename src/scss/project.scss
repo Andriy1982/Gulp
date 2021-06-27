@@ -1,0 +1,57 @@
+.project {
+    padding: 60px 10px;
+
+    &__title {     
+        position: relative;   
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 44px;
+        color: #181819;
+        text-align: center;
+        margin-bottom: 55px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%;
+            display: block;
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color: #181819;
+
+        }
+
+        &::before {
+            transform: translateX(-180px);
+        }
+        &::after {
+            transform: translateX(180px);
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 360px);
+        // grid-template-rows: repeat(auto-fit, minmax(380px, 1fr));
+        column-gap: 30px;
+        row-gap: 60px;
+        justify-content: center;
+    }
+
+    &__item-img {
+        margin-bottom: 20px;
+    }
+
+    &__item-description {
+        font-family: 'Century Gothic';
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #181819;
+    }
+}

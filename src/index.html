@@ -5,19 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" href="./app/css/main.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
 </head>
 <body>
-    <h1 class="section__title">Hello world</h1>
+    <header class="header">
+        <div class="header__wrap">
+            <ul class="header__social-list">
+                <li class="header__social-item">
+                    <a href="#" class="header__social-link">
+                        <img src="./img/icon/facebook.svg" alt="facebook" class="header__social-image">
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="#" class="header__social-link">
+                        <img src="./img/icon/instagram.svg" alt="instagram" class="header__social-image">
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="#" class="header__social-link">
+                        <img src="./img/icon/pinterest.svg" alt="pinterest" class="header__social-image">
+                    </a>
+                </li>
 
-    
-    <svg>
-        <use href="img/sprite.svg#svg"></use>
-    </svg>
-    <svg class="">
-        <use xlink:href="img/sprite.svg#first"></use>
-    </svg>
-    
+            </ul>
+            <a href="#" class="header__logo">
+                <img src="./img/icon/logo.svg" alt="logo" class="header__logo-image">
+            </a>
+            <ul class="header__language-list">
+                <li class="header__language-item">
+                    <button class="header__language-btn">Eng</button>
+                </li>
+                <li class="header__language-item">
+                    <button class="header__language-btn">Рус</button>
+                </li>
+                <li class="header__language-item">
+                    <button class="header__language-btn">Pol</button>
+                </li>
+            </ul>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">О студии</a>
+                </li>
+                <span class="header__nav-decor"></span>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Портфолио</a>
+                </li>
+                <span class="header__nav-decor"></span>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Этапы работы</a>
+                </li>
+                <span class="header__nav-decor"></span>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Стоимость</a>
+                </li>
+                <span class="header__nav-decor"></span>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Эко-материалы</a>
+                </li>
+                <span class="header__nav-decor"></span>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="video"></section>
+        <section class="project">
+            <h2 class="project__title">Новые проекты</h2>
+            <ul class="project__list">
+                <li class="project__item">
+                    <img src="./img/project-image/image1.jpg" alt="image1" class="project__item-img" width="360px" height="288px">
+                    <p class="project__item-description">Котедж Первый парковый</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image2.jpg" alt="image2" class="project__item-img">
+                    <p class="project__item-description">Квартира ЖК Риверстоун</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image3.jpg" alt="image3" class="project__item-img">
+                    <p class="project__item-description">Дом Грузевица-3</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image4.jpg" alt="image4" class="project__item-img">
+                    <p class="project__item-description">Дом по улице Летняя</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image5.jpg" alt="image5" class="project__item-img">
+                    <p class="project__item-description">Магазин Аристократ</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image6.jpg" alt="image6" class="project__item-img">
+                    <p class="project__item-description">Магазин SEW TECH</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image7.jpg" alt="image7" class="project__item-img">
+                    <p class="project__item-description">Апартаменты</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image8.jpg" alt="image8" class="project__item-img">
+                    <p class="project__item-description">Бутик Mix</p>
+                </li>
+                <li class="project__item">
+                    <img src="./img/project-image/image9.jpg" alt="image9" class="project__item-img">
+                    <p class="project__item-description">Загородный дом</p>
+                </li>
+            </ul>
+        </section>
+        <section class="about">
+            <h2 class="about__title">Заказать дизайн интерьера в <span>Хмельницком для своего дома!</span></h2>
+            <div class="about__wrap">
+            <p class="about__description">Дом для каждого из нас – это место, где мы чувствуем уют и покой, обретаем душевное равновесие, куда мы все спешим после тяжелого рабочего дня, и где хотим спрятаться от городской суматохи. И, конечно, у каждого есть дом мечты, который, наверное, был придуман и визуализирован еще в детстве или же, наоборот, есть мечта, но нет четкого представления как он будет выглядеть. Команда We-ART с радостью поможет Вам выполнить абсолютно любой дизайн интерьера Хмельницкий.
+                <br>
+                <br>
+                За время работы команда дизайн студии интерьера в Хмельницком We-ART накопила достаточно знаний и навыков, чтобы удовлетворить вкусы любого клиента, а также выполнила десятки проектов, в том числе и для представителей своей сферы. Каждый клиент уникален, и каждый ставит свои приоритеты – для кого-то это время, для кого-то цена. Для команды We-ART в приоритете же качество выполнения задач и пожелания клиента, поэтому про нашу компанию за все время работы отзывались только с хорошей стороны.</p>
+            </div>
+                <button class="about__btn">Читать больше</button>
+        </section>
+    </main>
+  
+
     <script src="js/main.js"></script>
 </body>
 </html>
