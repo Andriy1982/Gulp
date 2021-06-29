@@ -1,6 +1,10 @@
-import obj  from "./func"
 
-console.log(obj);
+const btnRef = document.querySelector('.open-modal-js');
+const navRef = document.querySelector('.open-nav-js');
 
-obj.add()
-console.log(obj.foo(5, 6));
+const openMenu = ({target}) => {
+    target.classList.toggle('close');
+    navRef.classList.toggle('active');
+}
+
+btnRef.addEventListener('click', openMenu )

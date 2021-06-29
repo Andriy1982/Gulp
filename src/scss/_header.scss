@@ -2,13 +2,32 @@
     background-color: #FFFFFF;
 
     &__wrap {
+        position: relative;
         justify-content: space-between;
         display: flex;
         align-items: center;
         padding: 32px 85px 32px 142px;
         border-bottom: 1px solid #E8EAEF;
-    }
 
+        @media screen and( max-width: 576px) { 
+            flex-direction: column;
+            padding: 10px 15px;
+         }
+
+         @media screen and( min-width: 577px) and (max-width: 768px){ 
+            padding-right: 70px;
+            padding-left: 70px;
+         }
+
+
+    }
+    &__social-list,
+    &__logo {
+        @media screen and( max-width: 576px) { 
+         margin-bottom: 10px;
+         }
+    }
+    
     &__social-list,
     &__language-list
      {
@@ -48,12 +67,32 @@
     }
 
     &__nav {
-        padding: 22px 85px 22px 142px;
+        padding: 22px 85px 22px 85px;
+
+        @media screen and( max-width: 768px) { 
+            position: absolute;
+            left: 0;
+            z-index: 2;
+            background-color: rgb(255,255,255);
+            height: 100vh;
+            padding-left: 50px;
+            padding-right: 50px;
+            transform: translateX(-100%);
+            transition: all 500ms linear;
+
+            &.active {
+                transform: translateX(0);
+            }
+         }
 
         &-list {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and( max-width: 768px) { 
+            flex-direction: column;
+            height: 250px;
+             }
         }
 
         &-link {
@@ -71,6 +110,28 @@
             width: 3px;
             height: 3px;
             background-color: #181819;
+        }
+
+      
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        // display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url('../img/icon/openMenu.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.close {
+            background-image: url('../img/icon/closeMenu.svg');
+        }
+            @media screen and( min-width: 768px) { 
+                display: none;
         }
     }
 

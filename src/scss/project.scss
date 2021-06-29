@@ -12,6 +12,11 @@
         text-align: center;
         margin-bottom: 55px;
 
+        @media screen and( max-width: 576px) { 
+            font-size: 24px;
+            line-height: 30px;
+         }
+
         &::before,
         &::after {
             position: absolute;
@@ -23,14 +28,22 @@
             width: 5px;
             height: 5px;
             background-color: #181819;
-
         }
 
         &::before {
             transform: translateX(-180px);
+
+            @media screen and( max-width: 576px) { 
+                transform: translateX(-115px);
+             }
         }
+        
         &::after {
             transform: translateX(180px);
+
+            @media screen and( max-width: 576px) { 
+                transform: translateX(115px);
+             }
         }
     }
 
@@ -41,6 +54,10 @@
         column-gap: 30px;
         row-gap: 60px;
         justify-content: center;
+
+        @media screen and( max-width: 576px) { 
+         grid-template-columns: repeat(auto-fit, 280px);
+           }
     }
 
     &__item-img {

@@ -1,17 +1,5 @@
-.section {
-    color: red;
-    &__title {
-        color:aqua;
-        font-size: 22px;
-    }
-}
-
-body {
-    // background-color: rgb(75, 68, 139);
-}
-
 @import "base";
 @import "header";
-@import "video";
 @import "project";
 @import "about";
+@import "footer";

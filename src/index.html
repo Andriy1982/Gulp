@@ -26,7 +26,6 @@
                         <img src="./img/icon/pinterest.svg" alt="pinterest" class="header__social-image">
                     </a>
                 </li>
-
             </ul>
             <a href="#" class="header__logo">
                 <img src="./img/icon/logo.svg" alt="logo" class="header__logo-image">
@@ -42,8 +41,9 @@
                     <button class="header__language-btn">Pol</button>
                 </li>
             </ul>
+            <button type="button" class="header__btn open-modal-js"></button>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav open-nav-js">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
                     <a href="#" class="header__nav-link">О студии</a>
@@ -72,7 +72,17 @@
         </nav>
     </header>
     <main>
-        <section class="video"></section>
+        <section class="video">
+            <video controls width="100%" height="100%" poster="./img/bg_photo.jpg" preload="none">
+                
+                <source src="video.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+                <source src="video.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+                <source src="video.ogv" type="video/ogg"><!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
+                <object data="video.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+                  <param name="movie" value="video.swf">
+                </object>
+              </video>
+        </section>
         <section class="project">
             <h2 class="project__title">Новые проекты</h2>
             <ul class="project__list">
@@ -125,8 +135,30 @@
                 <button class="about__btn">Читать больше</button>
         </section>
     </main>
-  
+    <footer class="footer">
+        <ul class="header__social-list">
+            <li class="header__social-item">
+                <a href="#" class="header__social-link">          
+                    <img src="./img/icon/facebook_footer.svg" alt="facebook" class="header__social-image">
+                </a>
+            </li>
+            <li class="header__social-item">
+                <a href="#" class="header__social-link">
+                    <img src="./img/icon/instagram_footer.svg" alt="instagram" class="header__social-image">
+                </a>
+            </li>
+            <li class="header__social-item">
+                <a href="#" class="header__social-link">
+                    <img src="./img/icon/pinterest_footer.svg" alt="pinterest" class="header__social-image">
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="footer__link">© We-Art. Все права защищены.</a>
+        <a href="#" class="footer__link-logo">
+            <img src="./img/icon/logo_footer.svg" alt="logo" class="footer__img-logo">
+        </a>
 
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

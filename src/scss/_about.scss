@@ -2,6 +2,11 @@
     padding: 60px 20px;
     background: #FBFBFB;
 
+    @media screen and( max-width: 576px) { 
+        padding-top: 30px;
+        padding-bottom: 30px;
+       }
+
     &__title {
         text-align: center;
         // font-family: 'Century Gothic';

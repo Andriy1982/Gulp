@@ -1,6 +1,3 @@
- const  add = () => { 
-    console.log("asdf");
-} 
 const foo = (a, b) => {
     return a + b
 }
